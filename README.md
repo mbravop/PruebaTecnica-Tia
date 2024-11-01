@@ -4,7 +4,7 @@ Repositorio para Prueba Técnica V5. Realizado por Mauricio Bravo.
 
 Este proyecto consiste en un sistema de gestión de reservas de vuelos, permite el registro e inicio de sesión de usuarios, crear/cancelar reservas de vuelos y filtrar vuelos reservados por el usuario.
 
-Se utilizó Django y MySQL.
+Se utilizó Django y MySQL. La aplicación corre en servidor local.
 
 ## Requisitos previos
 
