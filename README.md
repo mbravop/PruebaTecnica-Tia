@@ -31,16 +31,16 @@ Activar entorno:
 - Windows: `<nombre_venv>\Scripts\activate`
 - MacOS/Linux: `source <nombre_venv>/bin/activate`
 
+Ejecutar el comando para la instalación
+
+```bash
+pip install -r requirements.txt
+```
+
 Acceder a carpeta de backEnd:
 
 ```bash
 cd sistemaVuelos_backend
-```
-
-Ejecutar el comando para la instalación
-
-```bash
-pip freeze
 ```
 
 ### Configuración base de datos MySQL
