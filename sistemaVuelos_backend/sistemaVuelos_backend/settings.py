@@ -82,9 +82,9 @@ WSGI_APPLICATION = 'sistemaVuelos_backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sistemaVuelos',
-        'USER':'root',
-        'PASSWORD':'root1234',
+        'NAME': '<sistemaBDD>',
+        'USER':'<usuarioSQL>',
+        'PASSWORD':'<contraseña>',
         'HOST':'localhost',
         'PORT':'3306',
     }
