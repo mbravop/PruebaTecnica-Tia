@@ -1,5 +1,6 @@
 import csv
 from datetime import time, datetime
+from itertools import islice
 from django.core.management.base import BaseCommand
 from vuelos.models import Vuelo
 import random as rd
@@ -14,7 +15,8 @@ class Command(BaseCommand):
         archivo_csv = kwargs['archivo_csv']
         with open(archivo_csv, newline='', encoding='utf-8') as csvfile:
             archivo = csv.DictReader(csvfile)
-            for fila in archivo:
+            contador = 0
+            for fila in islice(archivo,300):
                 fechaCompleta = datetime.strptime(f"{fila['year']}-{fila['month']}-{fila['day']}", "%Y-%m-%d").date()
                 horaString = fila['sched_dep_time']
                 horas = int(horaString[:-2])
@@ -27,4 +29,5 @@ class Command(BaseCommand):
                     horario = horarioCompleto,
                     disponibilidad=str(rd.randint(100,300))
                 )
+                contador+=1
         self.stdout.write(self.style.SUCCESS('Datos de vuelos importados exitosamente'))
