@@ -51,7 +51,7 @@ pip freeze
 - Ejecutar comando:
 
 ```sql
-CREATE DATABASE nombreBDD;
+CREATE DATABASE <nombreBDD>;
 ```
 
 2. **Configurar settings.py**:
